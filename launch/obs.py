@@ -28,7 +28,7 @@ def take_turn():
     twist = Twist()
     twist.angular.z = 1.57/2 # degree 180 / pi(90)
     r = rospy.Rate(5.0)
-    for i in range(1):
+    for i in range(0,10):
         pub.publish(twist)
         r.sleep()
 
